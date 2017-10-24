@@ -20,5 +20,7 @@ public class MainActivity extends AppCompatActivity {
         EditText edHeight = (EditText) findViewById(R.id.ed_height);
         float weight = Float.parseFloat(edWeight.getText().toString());
         float height = Float.parseFloat(edHeight.getText().toString());
+        float bmi = weight/(height * height);
+        Log.d("MainActivity","Your bmi:" + bmi);
     }
 }
